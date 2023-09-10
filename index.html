@@ -7,7 +7,60 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Formulário</h1>
+    <main>
+      <h1>Formulário</h1>
+      <form class="container_form">
+        <fieldset class="container_fieldset">
+          <legend><strong>Dados Pessoais</strong></legend>
+          <div class="dadosPessoais">
+            <label><strong>Nome</strong></label>
+            <input id="inName" type="text" required />
+            <br />
+            <label><strong>Endereço</strong></label>
+            <input id="inAdreess" type="text" required />
+            <br />
+            <label><strong>Cidade</strong></label>
+            <input id="inCity" type="text" required />
+          </div>
+          <br />
+          <label>Estado: </label>
+          <select id="inState" required>
+            <option value="">--Escolha um Estado--</option>
+            <option value="Espirito Santo">Espirito Santo</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="container_fieldset">
+          <legend><strong>Dados Profissionais</strong></legend>
+          <label>Natureza do Cargo:</label>
+          <br />
+          <input type="radio" name="cargo" checked /> <span>Gerência</span>
+          <input type="radio" name="cargo" /> <span>Financeiro</span>
+          <input type="radio" name="cargo" /> <span>Recepção</span>
+          <input type="radio" name="cargo" /> <span>Administrativo</span>
+          <input type="radio" name="cargo" /> <span>Jurídico</span> <br /><br />
+          <label>Área de interesse:</label>
+          <br />
+          <input type="checkbox" checked /> <span>Computação</span>
+          <input type="checkbox" /> <span>Biologia</span>
+          <input type="checkbox" /> <span>Meio ambiente</span>
+          <input type="checkbox" /> <span>Engenharia</span>
+          <input type="checkbox" /> <span>História</span>
+          <br />
+          <br />
+          <label>Mini Currículo:</label>
+          <textarea cols="45" rows="10"></textarea>
+        </fieldset>
+
+        <div class="container_btn">
+        <button id="btnEnviar" class="btnEnviar" type="submit">Enviar</buttoni>
+        <button id="btnLimpar" class="btnLimpar" type="submit">Limpar</button>
+      </div>
+      </form>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
