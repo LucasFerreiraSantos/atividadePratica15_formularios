@@ -9,7 +9,7 @@
   <body>
     <main>
       <h1>Formulário</h1>
-      <form class="container_form">
+      <form id="my_form" class="container_form">
         <fieldset class="container_fieldset">
           <legend><strong>Dados Pessoais</strong></legend>
           <div class="dadosPessoais">
@@ -25,7 +25,7 @@
           <br />
           <label>Estado: </label>
           <select id="inState" required>
-            <option value="">--Escolha um Estado--</option>
+            <option value="Minas Gerais">Minas Gerais</option>
             <option value="Espirito Santo">Espirito Santo</option>
             <option value="São Paulo">São Paulo</option>
             <option value="Bahia">Bahia</option>
@@ -37,27 +37,27 @@
           <legend><strong>Dados Profissionais</strong></legend>
           <label>Natureza do Cargo:</label>
           <br />
-          <input type="radio" name="cargo" checked /> <span>Gerência</span>
-          <input type="radio" name="cargo" /> <span>Financeiro</span>
-          <input type="radio" name="cargo" /> <span>Recepção</span>
-          <input type="radio" name="cargo" /> <span>Administrativo</span>
-          <input type="radio" name="cargo" /> <span>Jurídico</span> <br /><br />
+          <input type="radio" name="cargo" value="Gerência" checked /> <span>Gerência</span>
+          <input type="radio" name="cargo" value="Financeiro" /> <span>Financeiro</span>
+          <input type="radio" name="cargo" value="Recepção" /> <span>Recepção</span>
+          <input type="radio" name="cargo" value="Administrativo" /> <span>Administrativo</span>
+          <input type="radio" name="cargo" value="Jurídico" /> <span>Jurídico</span> <br /><br />
           <label>Área de interesse:</label>
           <br />
-          <input class="checkbox_value" type="checkbox" /> <span>Computação</span>
-          <input class="checkbox_value" type="checkbox" /> <span>Biologia</span>
-          <input class="checkbox_value" type="checkbox" /> <span>Meio ambiente</span>
-          <input class="checkbox_value" type="checkbox" /> <span>Engenharia</span>
-          <input class="checkbox_value" type="checkbox" /> <span>História</span>
+          <input name="check" type="checkbox" value="Computação" /> <span>Computação</span>
+          <input name="check" type="checkbox" value="Biologia" /> <span>Biologia</span>
+          <input name="check" type="checkbox" value="Meio ambiente" /> <span>Meio ambiente</span>
+          <input name="check" type="checkbox" value="Engenharia" /> <span>Engenharia</span>
+          <input name="check" type="checkbox" value="História" /> <span>História</span>
           <br />
           <br />
           <label>Mini Currículo:</label>
-          <textarea cols="45" rows="10"></textarea>
+          <textarea id="textarea" placeholder="Não é obrigatório o preenchimento!" cols="45" rows="10"></textarea>
         </fieldset>
 
         <div class="container_btn">
-        <button id="btnEnviar" class="btnEnviar" type="submit">Enviar</buttoni>
-        <button id="btnLimpar" class="btnLimpar" type="submit">Limpar</button>
+        <button class="btnEnviar" type="submit">Enviar</buttoni>
+        <button class="btnLimpar" type="reset">Limpar</button>
       </div>
       </form>
     </main>
